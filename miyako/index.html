@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062b3b">
+  <meta name="description" content="MIYAKO BLUE 宮古島・宮古藍探索。六天五夜日本宮古島自由潛水、珊瑚礁探索與海島旅行。">
+  <title>MIYAKO BLUE｜宮古島・宮古藍探索</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#062b3b;--deep:#031b29;--blue:#087c9c;--aqua:#9de4e6;--sand:#e7d9c2;--ink:#163542;--muted:#6e858d;--paper:#f5f7f4;--white:#fff;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans","Noto Sans TC",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75}a{color:inherit;text-decoration:none}img{display:block;width:100%;height:100%;object-fit:cover}button{font:inherit}
+    .nav{position:absolute;z-index:5;top:0;left:0;width:100%;padding:26px 6vw;display:flex;align-items:center;justify-content:space-between;color:#fff;border-bottom:1px solid #ffffff35}.brand{font-size:13px;letter-spacing:.22em;font-weight:600}.brand span{display:block;font-size:9px;letter-spacing:.28em;opacity:.72;margin-top:2px}.navlinks{display:flex;gap:28px;font-size:11px;letter-spacing:.12em}.navlinks a{opacity:.88;transition:.25s}.navlinks a:hover{opacity:1;color:var(--aqua)}
+    .hero{height:min(900px,100svh);min-height:690px;position:relative;background:var(--deep);color:#fff;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#031b29b8 0%,#031b2933 60%,#031b2910),linear-gradient(0deg,#031b29a8 0%,transparent 45%)}.hero img{opacity:.88;object-position:center 46%;transform:scale(1.02)}.hero-content{position:absolute;z-index:2;left:10vw;bottom:14%;max-width:800px}.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--aqua);font-weight:600}.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(58px,10vw,138px);letter-spacing:.055em;line-height:.98;margin:20px 0 16px}.hero h1 span{display:block;font-family:"Noto Sans TC",sans-serif;font-size:clamp(18px,2.2vw,28px);letter-spacing:.2em;font-weight:300;margin-top:28px}.hero p{font-size:14px;letter-spacing:.08em;color:#e1eef0;max-width:460px;margin:24px 0 34px}.hero-cta{display:inline-flex;align-items:center;gap:18px;border:1px solid #ffffff9c;padding:13px 20px;font-size:11px;letter-spacing:.16em;transition:.25s}.hero-cta:hover{background:#fff;color:var(--navy)}.hero-cta b{font-size:18px;font-weight:300}.hero-index{position:absolute;z-index:2;right:6vw;bottom:9%;writing-mode:vertical-rl;font-family:var(--serif);font-size:11px;letter-spacing:.25em;color:#ffffffb0}
+    .section{padding:120px 9vw}.section-kicker{font-size:10px;letter-spacing:.3em;color:var(--blue);font-weight:700}.section-title{font-family:var(--serif);font-size:clamp(38px,5.2vw,68px);font-weight:400;line-height:1.12;letter-spacing:.02em;margin:16px 0 26px;color:var(--navy)}.section-title small{display:block;font:300 16px/1.8 "Noto Sans TC",sans-serif;letter-spacing:.15em;margin-top:16px;color:#50717c}.lead{max-width:670px;color:#56717b;font-size:15px;font-weight:300}.intro{display:grid;grid-template-columns:1fr 1.05fr;gap:9vw;align-items:center}.intro-copy{padding:25px 0}.intro-image{height:620px;position:relative}.intro-image:after{content:"MIYAKO BLUE";position:absolute;bottom:20px;right:-22px;color:#fff;font:18px var(--serif);letter-spacing:.2em;writing-mode:vertical-rl;text-shadow:0 2px 14px #0008}.microline{display:flex;align-items:center;gap:15px;color:#7a9299;font-size:9px;letter-spacing:.2em;margin-top:38px}.microline:before{content:"";width:45px;height:1px;background:#91b5ba}
+    .dark{background:var(--navy);color:#fff}.dark .section-title{color:#fff}.dark .section-title small,.dark .lead{color:#b6cbd0}.destination-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:54px}.destination-head .lead{max-width:390px}.destination-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.destination-card{position:relative;min-height:520px;overflow:hidden;background:#123b4b}.destination-card img{transition:transform .8s}.destination-card:hover img{transform:scale(1.045)}.destination-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#031b29d9,transparent 62%)}.destination-card.secondary{min-height:520px}.destination-card.secondary img{object-position:center}.card-copy{position:absolute;z-index:1;left:34px;bottom:34px;color:white}.card-copy span{font-size:9px;letter-spacing:.25em;color:var(--aqua)}.card-copy h3{font:400 34px var(--serif);margin:8px 0}.card-copy p{font-size:12px;color:#d0e1e4;max-width:340px;margin:0}
+    .islands{padding-top:105px;padding-bottom:110px}.island-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}.island{background:#fff}.island-photo{height:245px;overflow:hidden}.island-photo img{transition:transform .6s}.island:hover img{transform:scale(1.06)}.island-copy{padding:22px 20px 26px}.island-copy small{font-size:9px;letter-spacing:.18em;color:var(--blue)}.island-copy h3{font:400 22px var(--serif);margin:7px 0 9px}.island-copy p{font-size:12px;color:#6b8289;margin:0}
+    .itinerary{background:#edf3f1}.itinerary-top{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px}.itinerary-top .lead{max-width:430px}.timeline{max-width:1000px;margin:0 auto;position:relative}.timeline:before{content:"";position:absolute;top:0;bottom:0;left:116px;width:1px;background:#b7cdd0}.day{display:grid;grid-template-columns:116px 1fr;gap:48px;padding:0 0 55px;position:relative}.day:last-child{padding-bottom:0}.day-no{font:400 34px var(--serif);color:var(--blue);line-height:1}.day-no small{display:block;font:600 9px var(--sans);letter-spacing:.2em;margin-top:9px;color:#77949a}.day:before{content:"";position:absolute;left:111px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 6px #edf3f1}.day-body{display:grid;grid-template-columns:1fr 230px;gap:36px;align-items:center}.day-body h3{font:400 26px var(--serif);margin:0 0 8px;color:var(--navy)}.day-body p{font-size:13px;color:#657e85;margin:0;max-width:560px}.day-tag{font-size:9px;letter-spacing:.16em;color:#5b8994;margin-bottom:9px}.day-photo{height:140px;overflow:hidden}.day-photo img{object-position:center 45%}
+    .included{display:grid;grid-template-columns:1fr 1fr;gap:80px}.check-list{list-style:none;padding:0;margin:26px 0 0}.check-list li{padding:12px 0;border-bottom:1px solid #ffffff24;font-size:13px;color:#d7e5e7;display:flex;gap:14px}.check-list li:before{content:"＋";color:var(--aqua)}.excludes li:before{content:"－";color:#d7b99a}.qualification{margin-top:60px;border:1px solid #ffffff35;padding:32px 36px;display:flex;align-items:center;gap:32px}.qualification strong{font:400 26px var(--serif);white-space:nowrap}.qualification p{font-size:12px;color:#c2d4d8;margin:0}
+    .booking{background:#e4efed}.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:9vw;align-items:start}.steps{border-top:1px solid #b7cbca}.step{display:grid;grid-template-columns:50px 1fr;gap:16px;padding:21px 0;border-bottom:1px solid #b7cbca}.step-no{font:400 22px var(--serif);color:var(--blue)}.step h4{font-size:13px;margin:0 0 4px;color:var(--navy)}.step p{font-size:11px;color:#6b8289;margin:0}.flight{background:#082e3e;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:70px 9vw;align-items:center}.flight h2{font:400 clamp(36px,5vw,58px) var(--serif);margin:12px 0}.flight .route{font-size:12px;letter-spacing:.2em;color:#b9dadd}.flight-card{border-top:1px solid #ffffff45;border-bottom:1px solid #ffffff45;padding:20px 0}.flight-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:center;padding:15px 0}.flight-row+.flight-row{border-top:1px solid #ffffff20}.flight-row b{font:400 20px var(--serif)}.flight-row span{font-size:10px;color:#b8cdd1;letter-spacing:.1em}.flight-row strong{font-size:13px;font-weight:500;text-align:right}.flight-note{font-size:10px;color:#91b2b8;margin-top:16px}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 54px;margin-top:42px;border-top:1px solid #d3dfdc}.faq-item{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:25px 0;border-bottom:1px solid #d3dfdc}.faq-item>span{font:400 20px var(--serif);color:var(--blue)}.faq-item h3{font-size:14px;color:var(--navy);margin:0 0 8px}.faq-item p{font-size:12px;color:#6b8289;margin:0}.final-cta{min-height:430px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;background:var(--deep)}.final-cta img{position:absolute;inset:0;opacity:.4}.final-cta:after{content:"";position:absolute;inset:0;background:#031b2966}.final-inner{position:relative;z-index:1;padding:80px 24px}.final-inner h2{font:400 clamp(44px,7vw,82px) var(--serif);margin:15px 0}.final-inner p{font-size:13px;color:#d4e5e7;letter-spacing:.08em}.final-inner a{display:inline-block;margin-top:22px;padding:13px 28px;border:1px solid #fff;font-size:11px;letter-spacing:.18em;transition:.2s}.final-inner a:hover{background:#fff;color:var(--navy)}
+    footer{background:#031b29;color:#a8c0c5;padding:34px 9vw;display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.12em}footer strong{color:#fff;font-weight:500}.float-line{position:fixed;z-index:10;right:24px;bottom:24px;background:#c7f0e9;color:#073b43;border-radius:40px;padding:13px 22px;box-shadow:0 8px 28px #001a2535;font-size:11px;font-weight:700;letter-spacing:.08em}.float-line:before{content:"↗";margin-right:9px}.reveal{opacity:1;transform:none}.js-ready .reveal{opacity:0;transform:translateY(22px);transition:opacity .75s,transform .75s}.js-ready .reveal.visible{opacity:1;transform:none}
+    @media(max-width:800px){.nav{padding:18px 6vw}.navlinks{gap:13px;font-size:9px}.navlinks a:nth-child(3),.navlinks a:nth-child(4){display:none}.hero{min-height:700px;height:92svh}.hero-content{left:7vw;right:7vw;bottom:15%}.hero h1{font-size:clamp(56px,15vw,94px)}.hero-index{right:5vw}.section{padding:82px 7vw}.intro,.destination-grid,.included,.booking-grid,.flight{grid-template-columns:1fr}.intro{gap:34px}.intro-image{height:460px}.destination-head,.itinerary-top{display:block}.destination-head .lead,.itinerary-top .lead{margin-top:20px}.destination-card,.destination-card.secondary{min-height:430px}.island-grid{grid-template-columns:1fr 1fr}.island-photo{height:190px}.day{grid-template-columns:62px 1fr;gap:24px;padding-bottom:40px}.timeline:before{left:61px}.day:before{left:56px}.day-no{font-size:27px}.day-body{grid-template-columns:1fr;gap:15px}.day-photo{height:190px}.qualification{display:block;padding:25px}.qualification p{margin-top:10px}.flight{padding:70px 7vw;gap:28px}.faq-grid{grid-template-columns:1fr}.flight-row{grid-template-columns:1fr 1fr 1fr}.flight-row b{font-size:17px}footer{padding:30px 7vw;display:block}footer span{display:block;margin-top:8px}.float-line{right:15px;bottom:15px;padding:12px 18px}}
+    @media(max-width:420px){.navlinks{gap:10px}.brand{font-size:11px}.hero p{font-size:12px}.island-grid{gap:9px}.island-photo{height:150px}.island-copy{padding:16px 13px}.island-copy h3{font-size:19px}.island-copy p{font-size:11px}.flight-row span{font-size:9px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+    /* V4 Luxury Ocean refinements */
+    :root{--navy:#092d3b;--deep:#061e29;--blue:#4e8790;--aqua:#c3d9d4;--sand:#c9b99e;--ink:#18343c;--muted:#71858a;--paper:#f7f7f3}
+    .nav{padding:32px 7vw}
+    .hero{height:min(960px,100svh);min-height:740px}
+    .hero:after{background:linear-gradient(90deg,#061e2988 0%,#061e2924 66%,#061e2908),linear-gradient(0deg,#061e29a0 0%,transparent 52%)}
+    .hero h1{font-size:clamp(64px,11vw,150px);letter-spacing:.075em;line-height:.94}
+    .hero-content{bottom:13%}
+    .hero p{line-height:2.1;letter-spacing:.12em}
+    .hero-cta{letter-spacing:.22em;padding:15px 24px}
+    .section{padding:145px 10vw}
+    .section-kicker{letter-spacing:.36em;color:#7a9da0}
+    .section-title{font-size:clamp(42px,5.5vw,76px);line-height:1.08;letter-spacing:.025em;margin:20px 0 30px}
+    .lead{color:#647b80;font-size:14px;line-height:2.05;letter-spacing:.025em}
+    .intro{grid-template-columns:.82fr 1.18fr;gap:10vw}
+    .intro-image{height:700px}
+    .destination-grid{grid-template-columns:1.25fr .75fr;gap:22px}
+    .destination-card,.destination-card.secondary{min-height:600px}
+    .destination-card:after{background:linear-gradient(0deg,#061e29e8 0%,#061e2920 54%,transparent 100%)}
+    .card-copy{left:42px;bottom:42px}
+    .card-copy h3{font-size:38px}
+    .card-copy p{line-height:1.9}
+    .island-grid{gap:18px;margin-top:58px}
+    .island{background:transparent;border-top:1px solid #d9e1dc}
+    .island-photo{height:285px}
+    .island-copy{padding:22px 4px 26px}
+    .island-copy small{letter-spacing:.24em;color:#77989a}
+    .island-copy h3{font-size:25px}
+    .itinerary{background:#f0f3ef}
+    .day-body h3{font-size:29px}
+    .day-photo{height:160px}
+    .flight{background:linear-gradient(120deg,#061e29 0%,#0a3b4a 100%);padding:86px 9vw}
+    .flight .route{line-height:2;letter-spacing:.08em}
+    .flight-row{grid-template-columns:1.15fr 1fr 1fr}
+    .flight-row span{display:block;font-size:10px;letter-spacing:.06em;margin-bottom:5px}
+    .flight-row b{display:block}
+    .flight-row strong{text-align:left;font-size:17px}
+    .flight-note{line-height:1.9}
+    .faq-item{padding:30px 0}
+    .final-cta{min-height:520px}
+    .final-inner h2{letter-spacing:.06em}
+    .float-line{background:#d9e6df;color:#123c43}
+    .flight-photo{width:100%;height:280px;object-fit:cover;margin-top:26px;opacity:.92}
+    .flight-cn{font-size:12px;color:#d3e4e4;letter-spacing:.08em;line-height:1.9;margin-top:10px}
+    @media(max-width:800px){
+      .nav{padding:18px 6vw}
+      .section{padding:92px 7vw}
+      .intro-image{height:500px}
+      .destination-card,.destination-card.secondary{min-height:460px}
+      .island-photo{height:205px}
+      .card-copy{left:25px;bottom:27px}
+      .card-copy h3{font-size:30px}
+      .day-photo{height:180px}
+      .flight{padding:70px 7vw;gap:28px}
+      .flight-photo{height:230px}
+    }
+    @media(max-width:420px){
+      .island-photo{height:150px}
+      .island-copy{padding:16px 13px}
+      .island-copy h3{font-size:19px}
+      .island-copy p{font-size:11px}
+      .flight-row{gap:8px}
+      .flight-row span{font-size:9px}
+      .flight-row strong{font-size:15px}
+    }
+
+  
+    @media print {
+      @page { size: 1440px 1000px; margin: 0; }
+      html, body { width: 1440px !important; margin: 0 !important; }
+      .float-line { display: none !important; }
+      .reveal, .js-ready .reveal { opacity: 1 !important; transform: none !important; }
+      .nav { position: absolute !important; }
+      a { text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 可替換設定：將下方 LINE_LINK、FORM_LINK 換成正式連結；團費與日期確認後再加入。 -->
+  <script>const LINE_LINK = "https://line.me/ti/p/7SJ-IHU37K"; const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSdMhm6tDTZcoKQbvVDBiU5kRaYMUYj1qnpb5nedr8Y9So2h0w/viewform";</script>
+  <nav class="nav">
+    <a class="brand" href="#top">MIYAKO BLUE<span>BY 蕉流 FREEDIVING</span></a>
+    <div class="navlinks"><a href="#about">STORY</a><a href="#destination">DESTINATION</a><a href="#journey">JOURNEY</a><a href="#booking">BOOKING</a></div>
+  </nav>
+  <header class="hero" id="top">
+    <img src="assets/yabiji-01.jpeg" alt="八重干瀨珊瑚礁與魚群，陽光穿透宮古藍海面">
+    <div class="hero-content">
+      <div class="eyebrow">JAPAN ISLAND DIVING EXPEDITION</div>
+      <h1>MIYAKO<br>BLUE<span>宮古島・宮古藍探索</span></h1>
+      <p>Dive into the Blue. Discover the Island.<br>逃離日常，走進日本最迷人的海洋秘境。</p>
+      <a class="hero-cta" href="#journey">DISCOVER THE OCEAN <b>↘</b></a>
+    </div>
+    <div class="hero-index">自由潛水・珊瑚礁・海島探索</div>
+  </header>
+
+  <main>
+    <section class="section intro" id="about">
+      <div class="intro-copy reveal">
+        <div class="section-kicker">01 / THE STORY</div>
+        <h2 class="section-title">A JOURNEY<br>INTO THE BLUE<small>不只是一趟潛水旅行，更是一場關於海洋、自由與探索的旅程。</small></h2>
+        <p class="lead">在透明湛藍的海水中探索珊瑚礁、與海龜共游，穿越島嶼之間的海上大橋，感受宮古島獨有的海洋魅力。把日常留在岸上，讓自己重新感受海洋的節奏。</p>
+        <div class="microline">SMALL GROUP EXPEDITION · MAX 8 GUESTS</div>
+      </div>
+      <div class="intro-image reveal"><img src="assets/yabiji-03.jpeg" alt="八重干瀨大型桌形珊瑚與深藍海域"></div>
+    </section>
+
+    <section class="section dark" id="destination">
+      <div class="destination-head reveal">
+        <div><div class="section-kicker">02 / DESTINATION</div><h2 class="section-title">THE ISLAND<br>OF MIYAKO</h2></div>
+        <p class="lead">宮古島位於日本沖繩縣，海水透明、珊瑚生態豐富，從水下的珊瑚花園，到島嶼之間壯麗的跨海大橋，每一個角落都值得探索。</p>
+      </div>
+      <div class="destination-grid">
+        <article class="destination-card reveal"><img src="assets/yabiji-04.jpeg" alt="八重干瀨珊瑚花園與熱帶魚群"><div class="card-copy"><span>THE GREAT CORAL REEF</span><h3>YABIJĪ 八重干瀨</h3><p>走進廣闊的珊瑚礁海域，探索宮古島最具代表性的海洋生態。</p></div></article>
+        <article class="destination-card secondary reveal"><img src="assets/blue-cave.jpg" alt="宮古島藍洞，陽光穿透岩洞水面"><div class="card-copy"><span>BEYOND THE SHORE</span><h3>MIYAKO BLUE</h3><p>在海水與陽光交會之處，遇見島嶼最純粹的藍。</p></div></article>
+      </div>
+    </section>
+
+    <section class="section islands">
+      <div class="section-kicker reveal">03 / ISLAND EXPLORATION</div>
+      <h2 class="section-title reveal">MORE THAN<br>JUST THE OCEAN<small>在海洋之外，也把島嶼的風景收進旅程。</small></h2>
+      <div class="island-grid">
+        <article class="island reveal"><div class="island-photo"><img src="assets/yabiji-02.jpeg" alt="八重干瀨層疊珊瑚礁"></div><div class="island-copy"><small>YABIJĪ MARINE PARK</small><h3>八重干瀨</h3><p>在廣闊珊瑚礁之間，尋找宮古島最迷人的海洋色彩。</p></div></article>
+        <article class="island reveal"><div class="island-photo"><img src="assets/blue-cave.jpg" alt="藍洞洞穴中的透光海水"></div><div class="island-copy"><small>BLUE CAVE</small><h3>藍洞</h3><p>走進岩洞與海水交會的空間，感受不同層次的宮古藍。</p></div></article>
+        <article class="island reveal"><div class="island-photo"><img src="assets/coast-underwater.jpeg" alt="宮古島海岸礁岩與清澈海水"></div><div class="island-copy"><small>ISLAND COAST</small><h3>島嶼海岸</h3><p>從水面到礁岩地形，欣賞島嶼海岸的自然樣貌。</p></div></article>
+        <article class="island reveal"><div class="island-photo"><img src="assets/nakanoshima-coast.jpeg" alt="中之島海岸珊瑚礁與清澈海水"></div><div class="island-copy"><small>NAKANOSHIMA BAY</small><h3>中之島海岸</h3><p>清澈灣區與珊瑚礁交織而成的天然海洋樂園。</p></div></article>
+      </div>
+    </section>
+
+    <section class="section itinerary" id="journey">
+      <div class="itinerary-top reveal">
+        <div><div class="section-kicker">04 / THE ITINERARY</div><h2 class="section-title">SIX DAYS<br>FIVE NIGHTS<small>六天五夜・宮古島海洋探索</small></h2></div>
+        <p class="lead">以海洋活動為主軸，搭配島嶼探索與自由時間。每日安排將依天候、海況、潮汐及當地合作業者調整。</p>
+      </div>
+      <div class="timeline">
+        <article class="day reveal"><div class="day-no">01<small>ARRIVAL</small></div><div class="day-body"><div><div class="day-tag">WELCOME TO MIYAKO</div><h3>抵達宮古島</h3><p>抵達機場、接送與租車、入住住宿，進行當地採買及團體晚餐，為接下來的海洋旅程做好準備。</p></div><div class="day-photo"><img src="assets/starlux-flight.jpg" alt="星宇航空班機抵達下地島機場"></div></div></article>
+        <article class="day reveal"><div class="day-no">02<small>COASTLINE</small></div><div class="day-body"><div><div class="day-tag">CAPE NISHI-HENNAZAKI</div><h3>西平安名碕</h3><p>走訪宮古島北端的壯麗岬角，欣賞開闊海景與宮古藍，感受島嶼的遼闊與海風。</p></div><div class="day-photo"><img src="assets/coast-underwater.jpeg" alt="宮古島海岸礁岩與清澈海水"></div></div></article>
+        <article class="day reveal"><div class="day-no">03<small>OCEAN DAY</small></div><div class="day-body"><div><div class="day-tag">YABIJĪ MARINE PARK</div><h3>八重干瀨珊瑚礁探索</h3><p>前往日本具代表性的群狀珊瑚礁海域，探索色彩豐富的珊瑚生態與熱帶魚群。</p></div><div class="day-photo"><img src="assets/yabiji-05.jpeg" alt="八重干瀨珊瑚礁與熱帶魚群"></div></div></article>
+        <article class="day reveal"><div class="day-no">04<small>ISLAND DRIVE</small></div><div class="day-body"><div><div class="day-tag">IRABU ISLAND</div><h3>伊良部島巡遊</h3><p>跨越全長約 3,540 公尺的伊良部大橋，探索海岸、海景與島嶼特色景點。</p></div><div class="day-photo"><img src="assets/blue-cave.jpg" alt="宮古島藍洞與透光海水"></div></div></article>
+        <article class="day reveal"><div class="day-no">05<small>FREE DIVE</small></div><div class="day-body"><div><div class="day-tag">NAKANOSHIMA BAY</div><h3>中之島海岸</h3><p>感受下地島西側天然灣區的清澈海水，享受浮潛、自由潛水與海岸時光。</p></div><div class="day-photo"><img src="assets/nakanoshima-coast.jpeg" alt="中之島海岸海底珊瑚礁"></div></div></article>
+        <article class="day reveal"><div class="day-no">06<small>DEPARTURE</small></div><div class="day-body"><div><div class="day-tag">UNTIL NEXT BLUE</div><h3>帶著海洋回憶，踏上歸途</h3><p>早餐、整理行李、辦理退房與還車，前往機場，結束六天五夜的宮古島旅程。</p></div><div class="day-photo"><img src="assets/starlux-flight.jpg" alt="下地島機場飛機"></div></div></article>
+      </div>
+      <p style="font-size:10px;color:#789198;margin:42px auto 0;max-width:1000px">※ 每日活動將依天候、海況、潮汐及當地合作業者安排調整，實際出海潛點不保證固定。</p>
+    </section>
+
+    <section class="section dark">
+      <div class="section-kicker reveal">05 / WHAT'S INCLUDED</div>
+      <h2 class="section-title reveal">THE DETAILS<br>MATTER</h2>
+      <div class="included">
+        <div class="reveal"><h3 style="font:400 24px var(--serif)">費用包含</h3><ul class="check-list"><li>當地住宿</li><li>當地交通與租車</li><li>海洋活動及船隻費用</li><li>當地行程安排與團體活動協調</li><li>500 萬意外身故保險</li><li>20 萬意外事故傷害醫療</li></ul></div>
+        <div class="reveal"><h3 style="font:400 24px var(--serif)">費用不包含</h3><ul class="check-list excludes"><li>台灣往返日本機票</li><li>個人餐飲與購物</li><li>個人自由活動支出</li><li>個人潛水裝備</li><li>其他未列入報價的自費項目</li></ul></div>
+      </div>
+      <div class="qualification reveal"><strong>WHO CAN JOIN</strong><p>適合已取得 AIDA2 或其他同等自由潛水課程資格者參加。活動前將確認參加者資格與海洋活動經驗。</p></div>
+      <p style="font-size:10px;color:#9cb9bf;margin-top:22px">團費、出發日期與住宿資訊：待正式公告後更新。</p>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="booking-grid">
+        <div class="reveal"><div class="section-kicker">06 / BOOKING</div><h2 class="section-title">YOUR NEXT<br>BLUE BEGINS<br>HERE<small>一起走進宮古島的藍色世界。</small></h2><p class="lead">小團制海洋探索旅程，滿團八人。先與我們聯繫，確認名額、資格與出發資訊。</p><div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdMhm6tDTZcoKQbvVDBiU5kRaYMUYj1qnpb5nedr8Y9So2h0w/viewform" target="_blank" rel="noopener" style="display:inline-block;background:#087c9c;color:white;padding:13px 20px;font-size:11px;letter-spacing:.1em">填寫報名表單 ↗</a><a href="https://line.me/ti/p/7SJ-IHU37K" target="_blank" rel="noopener" style="display:inline-block;border:1px solid #6e9297;color:#163542;padding:13px 20px;font-size:11px;letter-spacing:.1em">LINE 詢問 ↗</a></div></div>
+        <div class="steps reveal">
+          <div class="step"><div class="step-no">01</div><div><h4>填寫報名資料</h4><p>透過官方報名表單提交基本資料與聯絡方式。 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdMhm6tDTZcoKQbvVDBiU5kRaYMUYj1qnpb5nedr8Y9So2h0w/viewform" target="_blank" rel="noopener" style="color:#087c9c;text-decoration:underline">開啟報名表單 ↗</a></p></div></div>
+          <div class="step"><div class="step-no">02</div><div><h4>確認名額與行程</h4><p>由主辦團隊確認報名資格、活動安排與費用。</p></div></div>
+          <div class="step"><div class="step-no">03</div><div><h4>完成訂金付款</h4><p>確認報名後，依通知繳交訂金以保留名額。</p></div></div>
+          <div class="step"><div class="step-no">04</div><div><h4>加入專屬 LINE 群組</h4><p>接收行程公告、交通與裝備資訊。</p></div></div>
+          <div class="step"><div class="step-no">05</div><div><h4>完成尾款與行前準備</h4><p>出發前完成尾款及必要資料確認。</p></div></div>
+          <div class="step"><div class="step-no">06</div><div><h4>啟程宮古島</h4><p>帶著期待，一起探索宮古島的海洋。</p></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" style="background:#f7f8f5">
+      <div class="section-kicker reveal">07 / GOOD TO KNOW</div>
+      <h2 class="section-title reveal">BEFORE YOU<br>TAKE THE BLUE<small>出發前，先了解這趟旅程。</small></h2>
+      <div class="faq-grid">
+        <article class="faq-item reveal"><span>01</span><div><h3>需要什麼資格才能參加？</h3><p>需具備 AIDA2 或其他同等自由潛水課程資格。主辦團隊將於報名前確認參加資格。</p></div></article>
+        <article class="faq-item reveal"><span>02</span><div><h3>這趟旅程會安排自由潛水嗎？</h3><p>旅程以自由潛水與海洋探索為主，並搭配浮潛及島嶼觀光；實際活動依海況與合作業者安排調整。</p></div></article>
+        <article class="faq-item reveal"><span>03</span><div><h3>潛點會完全依照行程表嗎？</h3><p>不保證固定潛點。天候、海況、潮汐與船家安排都可能影響出海，安全與適合當日的海況優先。</p></div></article>
+        <article class="faq-item reveal"><span>04</span><div><h3>機票有包含在團費內嗎？</h3><p>台灣往返日本機票不包含於團費。航班資訊依目前提供的星宇航空班次呈現，請以實際訂位及航空公司公告為準。</p></div></article>
+      </div>
+    </section>
+
+    <section class="flight">
+      <div>
+        <div class="section-kicker" style="color:#c3d9d4">08 / FLIGHT INFORMATION · 航班資訊</div>
+        <h2>FLY INTO<br>THE BLUE</h2>
+        <div class="route">台中清泉崗機場（RMQ） ⇄ 日本下地島機場（SHI）</div>
+        <p class="flight-cn">星宇航空｜台中清泉崗直飛日本下地島</p>
+        <img class="flight-photo" src="assets/starlux-flight.jpg" alt="星宇航空班機停靠下地島機場，旅客準備登機">
+      </div>
+      <div>
+        <div class="flight-card">
+          <div class="flight-row">
+            <div><span>去程航班｜JX308</span><b>台中清泉崗機場（RMQ）</b></div>
+            <div><span>起飛時間</span><strong>07:20</strong></div>
+            <div><span>抵達時間</span><strong>09:40</strong></div>
+          </div>
+          <div class="flight-row">
+            <div><span>回程航班｜JX309</span><b>日本下地島機場（SHI）</b></div>
+            <div><span>起飛時間</span><strong>10:40</strong></div>
+            <div><span>抵達時間</span><strong>11:00</strong></div>
+          </div>
+        </div>
+        <p class="flight-note">去程 JX308：台中清泉崗機場 07:20 起飛，09:40 抵達日本下地島機場。<br>回程 JX309：日本下地島機場 10:40 起飛，11:00 抵達台中清泉崗機場。<br>※ 以上為目前提供的航班資訊，實際航班日期、時間及營運狀態請以航空公司公告與訂位紀錄為準。</p>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact"><img src="assets/yabiji-01.jpeg" alt="八重干瀨珊瑚礁與宮古藍海域"><div class="final-inner"><div class="eyebrow">DIVE INTO THE BLUE · DISCOVER THE ISLAND</div><h2>SEE YOU IN MIYAKO.</h2><p>蕉流 FREEDIVING — 海洋探索，從這裡開始。</p><a href="https://line.me/ti/p/7SJ-IHU37K" id="lineCta" target="_blank" rel="noopener">立即詢問旅程　↗</a></div></section>
+  </main>
+  <footer><strong>MIYAKO BLUE <span style="font-weight:300">｜宮古島・宮古藍探索</span></strong><span>BY 蕉流 FREEDIVING　·　JAPAN ISLAND DIVING EXPEDITION</span></footer>
+  <a class="float-line" href="https://line.me/ti/p/7SJ-IHU37K" id="lineFloat" target="_blank" rel="noopener">LINE 詢問旅程</a>
+  <script>
+    document.querySelectorAll('a[href="#contact"]').forEach(a=>a.addEventListener('click',e=>{if(LINE_LINK!=="#contact"){e.preventDefault();window.open(LINE_LINK,"_blank","noopener")}}));
+    document.querySelectorAll("#lineCta,#lineFloat").forEach(a=>a.href=LINE_LINK);
+    document.documentElement.classList.add('js-ready');
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
