@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>蕉流 Freediving｜AIDA 自由潛水課程</title>
 <meta name="description" content="蕉流 Freediving：台南泳池與小琉球海訓的 AIDA 自由潛水課程，由教練 Banana 授課。">
+<meta name="generator" content="bananaflow-cms">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
@@ -183,6 +184,25 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
 .archive-item .more{color:var(--mut)}
 @media(max-width:520px){.archive-group>summary{padding:.9rem 1rem}.archive-content{padding:0 1rem 1rem}.archive-group>summary .archive-count{font-size:.76rem}}
 
+
+/* ===== 後台新增區塊用樣式 ===== */
+.blk-h3{margin:1.6rem 0 .3rem;font-size:1.3rem;font-weight:900}
+.blk-h4{margin:1.2rem 0 .2rem;font-size:1rem;color:var(--acc)}
+.blk-p p{margin:0 0 .8rem}
+.blk-list{margin:.4rem 0 1rem;padding-left:1.3rem}
+.blk-list li{margin:.3rem 0}
+.blk-img{margin:1.2rem 0}
+.blk-img img{display:block;width:100%;height:auto;border-radius:18px;background:var(--line)}
+.blk-img figcaption{margin-top:.5rem;font-size:.88rem;color:var(--mut);text-align:center}
+.blk-btns{margin:1.2rem 0}
+.vid-embed{position:relative;border-radius:18px;overflow:hidden;aspect-ratio:16/9;background:#000}
+.vid-embed iframe,.vid-embed video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid:not([style]){background-color:#062033}
+.gal img.ext{min-height:60px}
+.nav-dropdown-menu a small:empty{display:none}
+.page-back{display:inline-block;margin:1.2rem 0 0;color:#f6e08a}
+.service-toggle+.sec:not(.service-toggle){padding-top:3.5rem}
+
 </style>
 </head>
 <body>
@@ -196,11 +216,11 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     <a href="#deal">折扣產品</a>
     <a href="#photos">相片集</a>
     <a href="#contact">報名</a>
-    <div class="nav-dropdown" id="foreignTripDropdown">
-      <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="foreignTripMenu">
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="navMenu7">
         國外潛旅 <span class="chevron" aria-hidden="true">⌄</span>
       </button>
-      <div class="nav-dropdown-menu" id="foreignTripMenu">
+      <div class="nav-dropdown-menu" id="navMenu7">
         <a href="miyako/" target="_blank" rel="noopener">宮古島 <small>MIYAKO BLUE ↗</small></a>
       </div>
     </div>
@@ -211,9 +231,9 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     <h1>蕉流<small>FREEDIVING</small></h1>
     <p class="lead">台南泳池打底，小琉球海裡實戰。跟著教練 Banana，從第一次閉氣到穩穩下潛，一步一步練。</p>
     <div class="btns">
-      <a class="btn p" href="https://www.instagram.com/bananaflow_freediving/" target="_blank" rel="noopener">官方 IG 私訊報名</a>
-      <a class="btn s" href="#courses">看課程內容</a>
-    </div>
+    <a class="btn p" href="https://www.instagram.com/bananaflow_freediving/" target="_blank" rel="noopener">官方 IG 私訊報名</a>
+    <a class="btn s" href="#courses">看課程內容</a>
+  </div>
   </div>
 </header>
 
@@ -221,7 +241,7 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
 <section class="sec" id="video">
   <h2>課程介紹影片</h2>
   <p class="sub">還不確定適不適合？先看看上課的樣子。</p>
-  <a class="vid" href="https://youtu.be/LxVfLAG1yDE" target="_blank" rel="noopener" aria-label="在 YouTube 觀看蕉流自由潛水課程簡介：教練真心話，新手必看">
+  <a class="vid" href="https://youtu.be/LxVfLAG1yDE" target="_blank" rel="noopener" aria-label="在 YouTube 觀看蕉流自由潛水課程簡介：教練真心話，新手必看" style="background-image:url(&quot;assets/home-img-03.webp&quot;)">
     <svg viewBox="0 0 68 68" aria-hidden="true"><circle cx="34" cy="34" r="33" fill="#f2c318"/><path d="M27 20l23 14-23 14z" fill="#1c1600"/></svg>
   </a>
   <p class="more">蕉流自由潛水課程簡介，在 YouTube 觀看。更多自潛分享，歡迎到 <a href="https://youtube.com/@banana-ariel" target="_blank" rel="noopener">YouTube 頻道</a> 逛逛。</p>
@@ -232,7 +252,7 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
   <p class="sub">課程由教練 Banana 帶領，小助手葦葦在旁協助。</p>
   <div class="grid">
     <article class="card person">
-      <div class="ph coach" role="img" aria-label="教練 Banana 在游泳池中"></div>
+      <div class="ph" role="img" aria-label="教練 Banana 在游泳池中" style="background-image:url(&quot;assets/home-img-02.webp&quot;);background-position:50% 28%"></div>
       <div class="tx">
         <h3>Banana <span>教練</span></h3>
         <p class="role">AIDA Instructor／Competition Freediver</p>
@@ -243,51 +263,38 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
         </div>
         <details class="bio"><summary><span class="o">顯示更多</span><span class="c">收合</span></summary>
           <div class="bio-body">
-            <p>嗨大家好我是香蕉，在自由潛水的路上我並不順利，跟大多數人一樣也是卡平壓卡到不行。</p><p>2020 年第一次接觸自由潛水之後，一卡就是兩年，但我也比大家多了 2 年的時間在累積經驗值。</p><p>平壓問題解決之後，伴隨而來的是卡平壓時期造成的壞習慣，間接造成了擠壓傷。</p><p>跟大家說這麼多，並不是要告訴大家自由潛水有多可怕，而是想跟大家說，正因為有了這些經驗，才希望不要再有人因為這些問題而困擾而受傷。</p>
-            <p>我的教學不是速成，也沒有捷徑，透過理解與分析式的教學方式，讓你真的能夠聽懂，並且完成。</p><p>最重要的是永遠不要放棄，邊玩邊成長才是最重要的。</p>
-            <h4>系統</h4>
-            <ul><li>AIDA Instructor</li></ul>
-            <h4>經歷</h4>
-            <ul>
-              <li>2024 臺灣盃自由潛水深度賽｜選手</li>
-              <li>2024 PRC 環太平洋自由潛水泳池賽｜選手</li>
-              <li>2026 115 年自由潛水室內錦標賽｜STA 銀牌、DBF 銀牌</li>
-              <li>2026 115 年全民運動會自由潛水項目｜臺南市代表，DNF 第 8 名、DBF 第 10 名</li>
-            </ul>
-            <h4>適合的學生</h4>
-            <ul>
-              <li>剛開始認識自由潛水的你</li>
-              <li>卡平壓、擠壓傷、長期竇部阻塞的你</li>
-              <li>對泳池訓練有興趣的你</li>
-            </ul>
-            <figure><img loading="lazy" alt="教練在泳池中水下平潛" src="assets/home-img-05.webp"><figcaption>自由潛水的比賽從來都是自己一個人而已</figcaption></figure>
-            <figure><img loading="lazy" alt="教練沿著潛繩向下潛" src="assets/home-img-06.webp"><figcaption>準備好、吸飽氣、開始這趟深度之旅</figcaption></figure>
+<p>嗨大家好我是香蕉，在自由潛水的路上我並不順利，跟大多數人一樣也是卡平壓卡到不行。</p><p>2020 年第一次接觸自由潛水之後，一卡就是兩年，但我也比大家多了 2 年的時間在累積經驗值。</p><p>平壓問題解決之後，伴隨而來的是卡平壓時期造成的壞習慣，間接造成了擠壓傷。</p><p>跟大家說這麼多，並不是要告訴大家自由潛水有多可怕，而是想跟大家說，正因為有了這些經驗，才希望不要再有人因為這些問題而困擾而受傷。</p><p>我的教學不是速成，也沒有捷徑，透過理解與分析式的教學方式，讓你真的能夠聽懂，並且完成。</p><p>最重要的是永遠不要放棄，邊玩邊成長才是最重要的。</p>
+  <h4 class="blk-h4">系統</h4>
+  <ul class="blk-list"><li>AIDA Instructor</li></ul>
+  <h4 class="blk-h4">經歷</h4>
+  <ul class="blk-list"><li>2024 臺灣盃自由潛水深度賽｜選手</li><li>2024 PRC 環太平洋自由潛水泳池賽｜選手</li><li>2026 115 年自由潛水室內錦標賽｜STA 銀牌、DBF 銀牌</li><li>2026 115 年全民運動會自由潛水項目｜臺南市代表，DNF 第 8 名、DBF 第 10 名</li></ul>
+  <h4 class="blk-h4">適合的學生</h4>
+  <ul class="blk-list"><li>剛開始認識自由潛水的你</li><li>卡平壓、擠壓傷、長期竇部阻塞的你</li><li>對泳池訓練有興趣的你</li></ul>
+  <figure><img loading="lazy" alt="教練在泳池中水下平潛" src="assets/home-img-05.webp"><figcaption>自由潛水的比賽從來都是自己一個人而已</figcaption></figure>
+  <figure><img loading="lazy" alt="教練沿著潛繩向下潛" src="assets/home-img-06.webp"><figcaption>準備好、吸飽氣、開始這趟深度之旅</figcaption></figure>
           </div>
         </details>
       </div>
     </article>
     <article class="card person">
-      <div class="ph wei" role="img" aria-label="葦葦在小琉球海中下潛"></div>
+      <div class="ph" role="img" aria-label="葦葦在小琉球海中下潛" style="background-image:url(&quot;assets/home-img-01.webp&quot;);background-position:50% 62%"></div>
       <div class="tx">
         <h3>葦葦 <span>上課小助手</span></h3>
         <p class="role">AIDA 2</p>
-        <div class="lk"><a href="https://www.instagram.com/ariel629hj/" target="_blank" rel="noopener">IG @ariel629hj</a></div>
+        <div class="lk">
+          <a href="https://www.instagram.com/ariel629hj/" target="_blank" rel="noopener">IG @ariel629hj</a>
+        </div>
         <details class="bio"><summary><span class="o">顯示更多</span><span class="c">收合</span></summary>
           <div class="bio-body">
-            <p>嗨大家好～</p><p>相較於香蕉教練，我其實只是一個小 A2，但在上課過程中難免會需要有示範操作的一些問題，有時候女生跟男生之間就比較不好操作，所以我的功能呢～就是協助教練的角色，打破尷尬盡情學習吧</p>
-            <figure><img loading="lazy" alt="葦葦在泳池協助學員動作" src="assets/home-img-07.webp"></figure>
-            <figure><img loading="lazy" alt="葦葦在池邊協助確認狀況" src="assets/home-img-08.webp"></figure>
+<p>嗨大家好～</p><p>相較於香蕉教練，我其實只是一個小 A2，但在上課過程中難免會需要有示範操作的一些問題，有時候女生跟男生之間就比較不好操作，所以我的功能呢～就是協助教練的角色，打破尷尬盡情學習吧</p>
+  <figure><img loading="lazy" alt="葦葦在泳池協助學員動作" src="assets/home-img-07.webp"></figure>
+  <figure><img loading="lazy" alt="葦葦在池邊協助確認狀況" src="assets/home-img-08.webp"></figure>
           </div>
         </details>
       </div>
     </article>
   </div>
 </section>
-
-
-
-
-
 
 <section class="sec service-toggle" id="courses">
   <details class="archive-group service-accordion">
@@ -353,7 +360,6 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     </ul>
   </div>
 </section>
-
       <section class="service-inner" id="training">
 <h2>訓練課程</h2>
   <p class="sub">拿到證照後持續進步，或補強還沒通過的項目。每堂 2.5 小時，泳池入場費另計。</p>
@@ -369,7 +375,6 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
   </div>
   <p class="fn">價格單位：元／堂</p>
 </section>
-
       <section class="service-inner" id="special">
 <h2>專項課程</h2>
   <p class="sub">針對單一技巧集中練習。報名較高階證照課程的話，部分專項已包含在內。泳池入場費另計。</p>
@@ -397,12 +402,22 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     <div class="archive-content service-content service-single">
       <p class="sub">想在小琉球放鬆下水，由教練帶你認識潛點。導潛屬於一般下潛，不含動作指導。</p>
   <div class="grid">
-    <div class="card"><h3>學生</h3><div class="price">800<small>元／潛</small></div></div>
-    <div class="card"><h3>非學生</h3><div class="price">1,100<small>元／潛</small></div></div>
+
+    <article class="card">
+      <h3>學生</h3>
+      <div class="price">800<small>元／潛</small></div>
+    </article>
+
+    <article class="card">
+      <h3>非學生</h3>
+      <div class="price">1,100<small>元／潛</small></div>
+    </article>
+
   </div>
     </div>
   </details>
 </section>
+
 <section class="sec service-toggle" id="deal">
   <details class="archive-group service-accordion">
     <summary><span class="archive-title">折扣產品</span><span class="archive-count">Pebbling 優惠資訊</span></summary>
@@ -423,26 +438,25 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
         <li>前往 Pebbling 官網，註冊會員。</li>
         <li>輸入專屬折扣碼 banana，即可享折扣。</li>
       </ol>
-      <div class="code"><span>專屬折扣碼</span><b id="dc">banana</b><button type="button" id="cp">複製</button></div>
+      <div class="code"><span>專屬折扣碼</span><b class="dc">banana</b><button type="button" class="cp">複製</button></div>
       <p class="note">想要更多優惠？私訊我們加入團購。</p>
       <div class="btns">
-        <a class="btn p" href="https://pebbling.cyberbiz.co" target="_blank" rel="noopener">前往 Pebbling 官網</a>
-        <a class="btn o" href="https://www.instagram.com/bananaflow_freediving/" target="_blank" rel="noopener">私訊加入團購</a>
-      </div>
+    <a class="btn p" href="https://pebbling.cyberbiz.co" target="_blank" rel="noopener">前往 Pebbling 官網</a>
+    <a class="btn o" href="https://www.instagram.com/bananaflow_freediving/" target="_blank" rel="noopener">私訊加入團購</a>
+  </div>
     </article>
   </div>
     </div>
   </details>
 </section>
 
-<section class="sec" id="photos">
+<section class="sec" id="photos" data-exclusive>
   <h2>賽事與潛旅</h2>
   <p class="sub">教練的比賽與潛水旅行紀錄。點擊分類即可展開內容，點擊照片可放大。</p>
-
-  <details class="archive-group">
+<details class="archive-group" id="races">
     <summary><span class="archive-title">賽事</span><span class="archive-count">3 項賽事紀錄</span></summary>
     <div class="archive-content">
-      <div class="archive-item">
+      <div class="archive-item" id="prc-2026">
 <h3 class="gh">2026 環太平洋自由潛水泳池賽（PRC）</h3>
   <p class="more" style="margin-top:0">公開團體 B 組銅牌｜隊名：DEEPBLUE 最深的藍</p>
   <div class="gal" data-initial="4">
@@ -457,7 +471,7 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     <img tabindex="0" role="button" loading="lazy" alt="2026 PRC 泳池賽事團隊大合照" src="assets/prc-09.webp">
   </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="taoyuan-115">
 <h3 class="gh">115 年全民運動會（桃園）</h3>
   <p class="more" style="margin-top:0">臺南市代表隊｜10 月 17 日｜水中運動男子組 自由潛水動態平潛無蹼｜第 8 名，成績 107.50</p>
   <div class="gal" data-initial="4">
@@ -474,40 +488,84 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
     <img tabindex="0" role="button" loading="lazy" alt="教練與夥伴手持臺南市牌子合影，點擊放大" src="assets/home-img-18.webp">
   </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="cmas-115">
 <h3 class="gh">115 年 CMAS 自由潛水室內錦標賽</h3>
   <p class="more" style="margin-top:0">公開男子組 STA、DBF 亞軍</p>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="比賽現場，選手在池邊與安全員確認狀況，點擊放大" src="assets/home-img-19.webp"><img tabindex="0" role="button" loading="lazy" alt="選手完成表現後，在池邊與裁判確認，點擊放大" src="assets/home-img-20.webp"><img tabindex="0" role="button" loading="lazy" alt="選手完成潛水後浮出水面呼吸，點擊放大" src="assets/home-img-21.webp"><img tabindex="0" role="button" loading="lazy" alt="教練在池中比出手勢，點擊放大" src="assets/home-img-22.webp"><img tabindex="0" role="button" loading="lazy" alt="選手在水下平潛，點擊放大" src="assets/home-img-23.webp"><img tabindex="0" role="button" loading="lazy" alt="教練在泳池中，點擊放大" src="assets/home-img-24.webp"><img tabindex="0" role="button" loading="lazy" alt="公開男子組 STA、DBF 亞軍獎牌，點擊放大" src="assets/home-img-25.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="比賽現場，選手在池邊與安全員確認狀況，點擊放大" src="assets/home-img-19.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="選手完成表現後，在池邊與裁判確認，點擊放大" src="assets/home-img-20.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="選手完成潛水後浮出水面呼吸，點擊放大" src="assets/home-img-21.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="教練在池中比出手勢，點擊放大" src="assets/home-img-22.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="選手在水下平潛，點擊放大" src="assets/home-img-23.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="教練在泳池中，點擊放大" src="assets/home-img-24.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="公開男子組 STA、DBF 亞軍獎牌，點擊放大" src="assets/home-img-25.webp">
+  </div>
       </div>
     </div>
   </details>
-
-  <details class="archive-group">
+<details class="archive-group" id="trips">
     <summary><span class="archive-title">潛旅</span><span class="archive-count">5 個潛旅目的地</span></summary>
     <div class="archive-content">
-      <div class="archive-item">
+      <div class="archive-item" id="green-island">
 <h3 class="gh">綠島潛旅</h3>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="綠島潛旅，大家在咖啡廳合影，點擊放大" src="assets/home-img-26.webp"><img tabindex="0" role="button" loading="lazy" alt="綠島潛旅，大家在海邊合影，點擊放大" src="assets/home-img-27.webp"><img tabindex="0" role="button" loading="lazy" alt="教練與學員在綠島水下合照，點擊放大" src="assets/home-img-28.webp"><img tabindex="0" role="button" loading="lazy" alt="綠島的海葵與小丑魚，點擊放大" src="assets/home-img-29.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者在綠島珊瑚礁上，點擊放大" src="assets/home-img-30.webp"><img tabindex="0" role="button" loading="lazy" alt="綠島的蝙蝠魚群與潛水者，點擊放大" src="assets/home-img-31.webp"><img tabindex="0" role="button" loading="lazy" alt="綠島的海龜，點擊放大" src="assets/home-img-32.webp"><img tabindex="0" role="button" loading="lazy" alt="綠島水下的結構物與潛水者（黑白），點擊放大" src="assets/home-img-33.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島潛旅，大家在咖啡廳合影，點擊放大" src="assets/home-img-26.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島潛旅，大家在海邊合影，點擊放大" src="assets/home-img-27.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="教練與學員在綠島水下合照，點擊放大" src="assets/home-img-28.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島的海葵與小丑魚，點擊放大" src="assets/home-img-29.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者在綠島珊瑚礁上，點擊放大" src="assets/home-img-30.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島的蝙蝠魚群與潛水者，點擊放大" src="assets/home-img-31.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島的海龜，點擊放大" src="assets/home-img-32.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="綠島水下的結構物與潛水者（黑白），點擊放大" src="assets/home-img-33.webp">
+  </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="lanyu">
 <h3 class="gh">蘭嶼潛旅</h3>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="蘭嶼水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-46.webp"><img tabindex="0" role="button" loading="lazy" alt="蘭嶼潛旅，大家在洞口跳躍合影，點擊放大" src="assets/home-img-47.webp"><img tabindex="0" role="button" loading="lazy" alt="蘭嶼潛旅，大家在公路上合影，點擊放大" src="assets/home-img-48.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者在蘭嶼水下峽谷中上升，點擊放大" src="assets/home-img-49.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者在水中伸手上升（黑白），點擊放大" src="assets/home-img-50.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者沿著潛繩下潛與上升，點擊放大" src="assets/home-img-51.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="蘭嶼水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-46.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="蘭嶼潛旅，大家在洞口跳躍合影，點擊放大" src="assets/home-img-47.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="蘭嶼潛旅，大家在公路上合影，點擊放大" src="assets/home-img-48.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者在蘭嶼水下峽谷中上升，點擊放大" src="assets/home-img-49.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者在水中伸手上升（黑白），點擊放大" src="assets/home-img-50.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者沿著潛繩下潛與上升，點擊放大" src="assets/home-img-51.webp">
+  </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="liuqiu">
 <h3 class="gh">小琉球潛旅</h3>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="小琉球水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-52.webp"><img tabindex="0" role="button" loading="lazy" alt="小琉球水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-53.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者握著水下推進器穿過水下鋼構，點擊放大" src="assets/home-img-54.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者與水下推進器，背景是水下鋼構，點擊放大" src="assets/home-img-55.webp"><img tabindex="0" role="button" loading="lazy" alt="潛水者操作水下推進器經過沉船，點擊放大" src="assets/home-img-56.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="小琉球水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-52.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="小琉球水下沉船與潛水者（黑白），點擊放大" src="assets/home-img-53.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者握著水下推進器穿過水下鋼構，點擊放大" src="assets/home-img-54.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者與水下推進器，背景是水下鋼構，點擊放大" src="assets/home-img-55.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="潛水者操作水下推進器經過沉船，點擊放大" src="assets/home-img-56.webp">
+  </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="maldives">
 <h3 class="gh">馬爾地夫潛旅</h3>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="馬爾地夫，潛水者與魟魚、魚群，點擊放大" src="assets/home-img-34.webp"><img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魟魚群，點擊放大" src="assets/home-img-35.webp"><img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魟魚與魚群，點擊放大" src="assets/home-img-36.webp"><img tabindex="0" role="button" loading="lazy" alt="馬爾地夫，潛水者在水下，點擊放大" src="assets/home-img-37.webp"><img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魚群與魟魚，點擊放大" src="assets/home-img-38.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="馬爾地夫，潛水者與魟魚、魚群，點擊放大" src="assets/home-img-34.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魟魚群，點擊放大" src="assets/home-img-35.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魟魚與魚群，點擊放大" src="assets/home-img-36.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="馬爾地夫，潛水者在水下，點擊放大" src="assets/home-img-37.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="馬爾地夫的魚群與魟魚，點擊放大" src="assets/home-img-38.webp">
+  </div>
       </div>
-      <div class="archive-item">
+      <div class="archive-item" id="komodo">
 <h3 class="gh">科摩多潛旅</h3>
-  <div class="gal"><img tabindex="0" role="button" loading="lazy" alt="科摩多水下的蝠魟，點擊放大" src="assets/home-img-39.webp"><img tabindex="0" role="button" loading="lazy" alt="科摩多的珊瑚礁與水面上的浮潛者，點擊放大" src="assets/home-img-40.webp"><img tabindex="0" role="button" loading="lazy" alt="科摩多水下的魚群，點擊放大" src="assets/home-img-41.webp"><img tabindex="0" role="button" loading="lazy" alt="兩位潛水者與蝠魟同游，點擊放大" src="assets/home-img-42.webp"><img tabindex="0" role="button" loading="lazy" alt="科摩多的科摩多龍，點擊放大" src="assets/home-img-43.webp"><img tabindex="0" role="button" loading="lazy" alt="坐在木帆船船首的旅人，點擊放大" src="assets/home-img-44.webp"><img tabindex="0" role="button" loading="lazy" alt="木帆船甲板上擺好的餐桌，點擊放大" src="assets/home-img-45.webp"></div>
+  <div class="gal">
+    <img tabindex="0" role="button" loading="lazy" alt="科摩多水下的蝠魟，點擊放大" src="assets/home-img-39.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="科摩多的珊瑚礁與水面上的浮潛者，點擊放大" src="assets/home-img-40.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="科摩多水下的魚群，點擊放大" src="assets/home-img-41.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="兩位潛水者與蝠魟同游，點擊放大" src="assets/home-img-42.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="科摩多的科摩多龍，點擊放大" src="assets/home-img-43.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="坐在木帆船船首的旅人，點擊放大" src="assets/home-img-44.webp">
+    <img tabindex="0" role="button" loading="lazy" alt="木帆船甲板上擺好的餐桌，點擊放大" src="assets/home-img-45.webp">
+  </div>
       </div>
     </div>
   </details>
 </section>
+
 </main>
 
 <section class="contact" id="contact">
@@ -527,8 +585,8 @@ footer{background:#04101c;color:#6f8aa2;text-align:center;font-size:.8rem;paddin
 
 <dialog id="lb" aria-label="放大檢視"><img id="lbi" alt=""></dialog>
 <script>
-// 同一時間只展開「賽事」或「潛旅」其中一個分類。
-document.querySelectorAll("#photos .archive-group").forEach(function(group){group.addEventListener("toggle",function(){if(!group.open)return;document.querySelectorAll("#photos .archive-group").forEach(function(other){if(other!==group)other.open=false;});});});
+// 標記 data-exclusive 的區塊：同一時間只展開一個分類
+document.querySelectorAll("[data-exclusive]").forEach(function(box){var gs=[].filter.call(box.children,function(e){return e.matches("details.archive-group")});gs.forEach(function(g){g.addEventListener("toggle",function(){if(!g.open)return;gs.forEach(function(o){if(o!==g)o.open=false})})})});
 
 (function(){var lb=document.getElementById("lb"),lbi=document.getElementById("lbi");
 function open(i){lbi.src=i.src;lbi.alt=i.alt;lb.showModal()}
@@ -537,23 +595,20 @@ lb.addEventListener("click",function(){lb.close()});
 document.querySelectorAll(".gal").forEach(function(g){var im=g.querySelectorAll("img"),initial=Number(g.getAttribute("data-initial"))||3,n=im.length-initial;if(n<=0)return;var t="顯示更多（"+n+" 張）";for(var i=initial;i<im.length;i++)im[i].hidden=true;var b=document.createElement("button");b.type="button";b.className="more-btn";b.setAttribute("aria-expanded","false");b.textContent=t;b.addEventListener("click",function(){var o=b.getAttribute("aria-expanded")==="true";for(var i=initial;i<im.length;i++)im[i].hidden=o;b.setAttribute("aria-expanded",o?"false":"true");b.textContent=o?t:"收合"});g.parentNode.insertBefore(b,g.nextSibling)});})();
 </script>
 <script>
-(function(){var b=document.getElementById("cp"),c=document.getElementById("dc");if(!b||!c)return;
+document.querySelectorAll(".code").forEach(function(box){var b=box.querySelector(".cp"),c=box.querySelector(".dc");if(!b||!c)return;
 b.addEventListener("click",function(){var t=c.textContent;
 function done(){b.textContent="已複製";setTimeout(function(){b.textContent="複製"},1800)}
 function fb(){try{var r=document.createRange();r.selectNodeContents(c);var s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand("copy");done()}catch(e){b.textContent="請長按複製"}}
-try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}});})();
+try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}})});
 </script>
-
 <script>
-(function(){
-  var wrap=document.getElementById("foreignTripDropdown");
-  if(!wrap)return;
+document.querySelectorAll(".nav-dropdown").forEach(function(wrap){
   var button=wrap.querySelector(".nav-dropdown-toggle");
   function setOpen(open){wrap.classList.toggle("open",open);button.setAttribute("aria-expanded",open?"true":"false");}
   button.addEventListener("click",function(){setOpen(button.getAttribute("aria-expanded")!=="true")});
   document.addEventListener("click",function(event){if(!wrap.contains(event.target))setOpen(false)});
   document.addEventListener("keydown",function(event){if(event.key==="Escape")setOpen(false)});
-})();
+});
 </script>
 </body>
 </html>
