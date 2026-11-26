@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#062033">
+<title>蕉流網站後台</title>
+<style>
+:root{--bg:#eef4f8;--panel:#fff;--ink:#0a2238;--muted:#5a7186;--line:#d3e1ea;--acc:#0b4064;--ban:#f2c318;--ok:#2f7a4f;--err:#b0402f;--soft:#f6f9fb}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.6;font-size:15px}
+button,input,textarea,select{font:inherit;color:inherit}
+.top{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,#0b4064,#062033);color:#e8f1f8;padding:calc(10px + env(safe-area-inset-top,0px)) 16px 10px;box-shadow:0 2px 12px rgba(0,0,0,.2)}
+.top-in{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top h1{font-size:17px;margin:0;font-weight:900;letter-spacing:.04em}
+.top h1 small{color:var(--ban);font-weight:500;letter-spacing:.2em;margin-left:6px;font-size:11px}
+.top .sp{flex:1}
+.status{font-size:12px;color:#b9cfe0}
+.status.dirty{color:var(--ban)}
+.wrap{max-width:900px;margin:0 auto;padding:16px 16px 120px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 14px}
+.card h2{font-size:17px;margin:0 0 4px}
+.card .desc{color:var(--muted);font-size:13px;margin:0 0 12px}
+.crumbs{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:13px;margin:0 0 12px;color:var(--muted)}
+.crumbs button{background:none;border:0;padding:2px 0;color:var(--acc);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:9px 16px;border-radius:999px;border:1.5px solid var(--acc);background:var(--acc);color:#fff;cursor:pointer;font-weight:700;font-size:14px;white-space:nowrap}
+.btn:hover{filter:brightness(1.1)}
+.btn.ban{background:var(--ban);border-color:var(--ban);color:#1c1600}
+.btn.ghost{background:#fff;color:var(--acc);border-color:var(--line)}
+.top .btn.ghost{background:transparent;color:#e8f1f8;border-color:rgba(255,255,255,.35)}
+.btn.small{padding:5px 11px;font-size:12.5px}
+.btn.danger{background:#fff;color:var(--err);border-color:#e9c4bd}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.ib{width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:0 0 auto;color:var(--ink)}
+.ib:hover{border-color:var(--acc)}
+.ib.x{color:var(--err)}
+.ib:disabled{opacity:.3;cursor:default}
+.row{display:flex;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .t{flex:1;min-width:0}
+.row .t b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .t small{display:block;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tag{display:inline-block;font-size:11px;padding:0 7px;border-radius:999px;background:#e3eef6;color:var(--acc);margin-left:4px;font-weight:500;vertical-align:middle}
+.tag.off{background:#f6e3df;color:var(--err)}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+label.f{display:block;margin:0 0 12px}
+label.f>span,.flabel{display:block;font-size:13px;font-weight:700;margin-bottom:4px}
+label.f>small,.hint{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+label.chk{display:flex;align-items:flex-start;gap:8px;margin:0 0 12px;font-size:14px;cursor:pointer}
+label.chk input{width:18px;height:18px;margin:2px 0 0;flex:0 0 auto}
+label.chk small{display:block;color:var(--muted);font-size:12px}
+input[type=text],input[type=url],input[type=password],input[type=number],textarea,select{width:100%;padding:9px 11px;border:1px solid var(--line);background:#fff;border-radius:9px;font-size:16px}
+textarea{min-height:90px;resize:vertical;line-height:1.7}
+input:focus,textarea:focus,select:focus{outline:2px solid rgba(11,64,100,.35);border-color:var(--acc)}
+.grid2{display:grid;gap:0 12px;grid-template-columns:1fr}
+@media(min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+.blk{border:1px solid var(--line);border-radius:12px;margin:0 0 10px;background:var(--soft)}
+.blk>.bh{display:flex;align-items:center;gap:6px;padding:8px 10px;cursor:pointer}
+.blk>.bh .bt{flex:1;min-width:0}
+.blk>.bh .bt b{font-size:13.5px}
+.blk>.bh .bt small{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.blk>.bb{padding:12px;border-top:1px solid var(--line);background:#fff;border-radius:0 0 12px 12px}
+.blk.off>.bh{opacity:.55}
+.items{border-left:3px solid var(--line);padding-left:10px;margin:4px 0 8px}
+.item{border:1px solid var(--line);border-radius:10px;background:#fff;margin:0 0 8px}
+.item>.ih{display:flex;align-items:center;gap:6px;padding:6px 8px;cursor:pointer;font-size:13px}
+.item>.ih .it{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item>.ib2{padding:10px;border-top:1px solid var(--line)}
+.strs .sr{display:flex;gap:6px;margin:0 0 6px}
+.img-f{display:flex;gap:10px;align-items:flex-start}
+.img-f .thumb{width:72px;height:72px;border-radius:9px;background:#e6eef4 center/cover no-repeat;flex:0 0 auto;border:1px solid var(--line)}
+.img-f .r{flex:1;min-width:0}
+.img-f .r .actions{margin-top:6px}
+.thumbs{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.thumbs .th{position:relative;width:76px;height:76px;border-radius:8px;background:#e6eef4 center/cover no-repeat;border:1px solid var(--line);cursor:pointer}
+.thumbs .th span{position:absolute;left:3px;top:3px;background:rgba(0,0,0,.55);color:#fff;font-size:10px;border-radius:5px;padding:0 4px}
+.msg{padding:10px 12px;margin:10px 0;font-size:14px;border-left:3px solid var(--acc);background:#fff;border-radius:0 8px 8px 0}
+.msg.ok{border-color:var(--ok);color:var(--ok)}.msg.err{border-color:var(--err);color:var(--err)}
+.hidden{display:none!important}
+.addbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.addbar select{flex:1;min-width:160px}
+.bottom{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));backdrop-filter:blur(8px)}
+.bottom-in{max-width:900px;margin:0 auto;display:flex;gap:8px;align-items:center}
+.bottom-in .sp{flex:1;font-size:12px;color:var(--muted)}
+#pv{position:fixed;inset:0;z-index:50;background:#04101c;display:flex;flex-direction:column}
+#pv .pvbar{display:flex;gap:8px;align-items:center;padding:calc(10px + env(safe-area-inset-top,0px)) 14px 10px;color:#fff}
+#pv .pvbar .sp{flex:1}
+#pv .pvbox{flex:1;display:flex;justify-content:center;overflow:auto;padding:0 10px 10px}
+#pv iframe{border:0;background:#fff;border-radius:10px;width:100%;height:100%}
+#pv.phone iframe{width:390px;max-width:100%}
+.spinner{width:14px;height:14px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite;display:inline-block}
+@keyframes spin{to{transform:rotate(360deg)}}
+.help{font-size:13px;color:var(--muted)}
+.help code{background:#e3eef6;padding:0 4px;border-radius:4px}
+details.adv>summary{cursor:pointer;font-size:13px;color:var(--acc);margin:4px 0 10px}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <h1>蕉流網站後台<small>CMS</small></h1>
+  <span class="sp"></span>
+  <span class="status" id="status">載入中…</span>
+  <button class="btn ghost small" type="button" id="openSettings">連線設定</button>
+</div></header>
+
+<div class="wrap">
+  <section class="card hidden" id="settingsCard">
+    <h2>連線設定（第一次使用）</h2>
+    <p class="desc">後台會把你的修改直接存到 GitHub，Vercel 自動更新網站（約 1 分鐘），不用再上傳壓縮檔。</p>
+    <label class="f"><span>GitHub Token</span><input type="password" id="sToken" autocomplete="off" placeholder="github_pat_…">
+      <small>只會存在這台裝置的瀏覽器。建立方式見下方說明。</small></label>
+    <details class="adv"><summary>進階：存放庫與分支</summary>
+      <div class="grid2">
+        <label class="f"><span>存放庫</span><input type="text" id="sRepo" placeholder="rs963258741-alt/bananaflow-freediving"></label>
+        <label class="f"><span>分支</span><input type="text" id="sBranch" placeholder="main"></label>
+      </div>
+    </details>
+    <div class="actions">
+      <button class="btn" type="button" id="saveSettings">儲存並測試連線</button>
+      <button class="btn danger" type="button" id="clearSettings">清除 Token</button>
+    </div>
+    <div id="settingsMsg"></div>
+    <details class="adv"><summary>如何建立 Token？</summary>
+      <ol class="help">
+        <li>GitHub → Settings → Developer settings → Personal access tokens → <b>Fine-grained tokens</b> → Generate new token</li>
+        <li>Repository access：Only select repositories → 選 <code>bananaflow-freediving</code></li>
+        <li>Permissions → Repository permissions → <b>Contents：Read and write</b></li>
+        <li>產生後複製 token，貼到上面的欄位。</li>
+      </ol>
+    </details>
+  </section>
+
+  <div id="loadMsg"></div>
+  <main id="view"></main>
+</div>
+
+<div class="bottom"><div class="bottom-in">
+  <button class="btn ghost" type="button" id="previewBtn">👀 預覽</button>
+  <span class="sp" id="bottomInfo"></span>
+  <button class="btn ban" type="button" id="publishBtn">發佈到網站</button>
+</div></div>
+
+<div id="pv" class="hidden phone">
+  <div class="pvbar">
+    <b>預覽</b>
+    <button class="btn ghost small" type="button" id="pvPhone">手機</button>
+    <button class="btn ghost small" type="button" id="pvDesk">電腦</button>
+    <span class="sp"></span>
+    <button class="btn ban small" type="button" id="pvClose">關閉預覽</button>
+  </div>
+  <div class="pvbox"><iframe id="pvFrame" title="網站預覽"></iframe></div>
+</div>
+
+<script src="../cms/render.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

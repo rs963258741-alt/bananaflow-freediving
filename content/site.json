@@ -1,0 +1,935 @@
+{
+  "meta": {
+    "title": "蕉流 Freediving｜AIDA 自由潛水課程",
+    "siteName": "蕉流 Freediving",
+    "description": "蕉流 Freediving：台南泳池與小琉球海訓的 AIDA 自由潛水課程，由教練 Banana 授課。"
+  },
+  "hero": {
+    "logo": "assets/home-img-04.webp",
+    "logoAlt": "蕉流 Free Diving 標誌",
+    "title": "蕉流",
+    "subtitle": "FREEDIVING",
+    "lead": "台南泳池打底，小琉球海裡實戰。跟著教練 Banana，從第一次閉氣到穩穩下潛，一步一步練。",
+    "buttons": [
+      {
+        "text": "官方 IG 私訊報名",
+        "url": "https://www.instagram.com/bananaflow_freediving/",
+        "style": "p"
+      },
+      {
+        "text": "看課程內容",
+        "url": "#courses",
+        "style": "s"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "video",
+      "nav": "介紹影片",
+      "title": "課程介紹影片",
+      "subtitle": "還不確定適不適合？先看看上課的樣子。",
+      "layout": "open",
+      "blocks": [
+        {
+          "type": "video",
+          "url": "https://youtu.be/LxVfLAG1yDE",
+          "mode": "thumb",
+          "thumb": "assets/home-img-03.webp",
+          "title": "在 YouTube 觀看蕉流自由潛水課程簡介：教練真心話，新手必看",
+          "caption": "蕉流自由潛水課程簡介，在 YouTube 觀看。更多自潛分享，歡迎到 [YouTube 頻道](https://youtube.com/@banana-ariel) 逛逛。"
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "team",
+      "nav": "教練",
+      "title": "教練與小助手",
+      "subtitle": "課程由教練 Banana 帶領，小助手葦葦在旁協助。",
+      "layout": "open",
+      "blocks": [
+        {
+          "type": "people",
+          "people": [
+            {
+              "name": "Banana",
+              "tag": "教練",
+              "role": "AIDA Instructor／Competition Freediver",
+              "photo": "assets/home-img-02.webp",
+              "photoAlt": "教練 Banana 在游泳池中",
+              "photoPos": "50% 28%",
+              "links": [
+                {
+                  "text": "官方 IG",
+                  "url": "https://www.instagram.com/bananaflow_freediving/"
+                },
+                {
+                  "text": "個人 IG（私人）",
+                  "url": "https://www.instagram.com/rs963258741/"
+                },
+                {
+                  "text": "YouTube",
+                  "url": "https://youtube.com/@banana-ariel"
+                }
+              ],
+              "bio": [
+                {
+                  "type": "text",
+                  "text": "嗨大家好我是香蕉，在自由潛水的路上我並不順利，跟大多數人一樣也是卡平壓卡到不行。\n2020 年第一次接觸自由潛水之後，一卡就是兩年，但我也比大家多了 2 年的時間在累積經驗值。\n平壓問題解決之後，伴隨而來的是卡平壓時期造成的壞習慣，間接造成了擠壓傷。\n跟大家說這麼多，並不是要告訴大家自由潛水有多可怕，而是想跟大家說，正因為有了這些經驗，才希望不要再有人因為這些問題而困擾而受傷。\n我的教學不是速成，也沒有捷徑，透過理解與分析式的教學方式，讓你真的能夠聽懂，並且完成。\n最重要的是永遠不要放棄，邊玩邊成長才是最重要的。",
+                  "style": ""
+                },
+                {
+                  "type": "heading",
+                  "level": "h4",
+                  "text": "系統"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "AIDA Instructor"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": "h4",
+                  "text": "經歷"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "2024 臺灣盃自由潛水深度賽｜選手",
+                    "2024 PRC 環太平洋自由潛水泳池賽｜選手",
+                    "2026 115 年自由潛水室內錦標賽｜STA 銀牌、DBF 銀牌",
+                    "2026 115 年全民運動會自由潛水項目｜臺南市代表，DNF 第 8 名、DBF 第 10 名"
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "level": "h4",
+                  "text": "適合的學生"
+                },
+                {
+                  "type": "list",
+                  "items": [
+                    "剛開始認識自由潛水的你",
+                    "卡平壓、擠壓傷、長期竇部阻塞的你",
+                    "對泳池訓練有興趣的你"
+                  ]
+                },
+                {
+                  "type": "image",
+                  "src": "assets/home-img-05.webp",
+                  "alt": "教練在泳池中水下平潛",
+                  "caption": "自由潛水的比賽從來都是自己一個人而已"
+                },
+                {
+                  "type": "image",
+                  "src": "assets/home-img-06.webp",
+                  "alt": "教練沿著潛繩向下潛",
+                  "caption": "準備好、吸飽氣、開始這趟深度之旅"
+                }
+              ]
+            },
+            {
+              "name": "葦葦",
+              "tag": "上課小助手",
+              "role": "AIDA 2",
+              "photo": "assets/home-img-01.webp",
+              "photoAlt": "葦葦在小琉球海中下潛",
+              "photoPos": "50% 62%",
+              "links": [
+                {
+                  "text": "IG @ariel629hj",
+                  "url": "https://www.instagram.com/ariel629hj/"
+                }
+              ],
+              "bio": [
+                {
+                  "type": "text",
+                  "text": "嗨大家好～\n相較於香蕉教練，我其實只是一個小 A2，但在上課過程中難免會需要有示範操作的一些問題，有時候女生跟男生之間就比較不好操作，所以我的功能呢～就是協助教練的角色，打破尷尬盡情學習吧",
+                  "style": ""
+                },
+                {
+                  "type": "image",
+                  "src": "assets/home-img-07.webp",
+                  "alt": "葦葦在泳池協助學員動作"
+                },
+                {
+                  "type": "image",
+                  "src": "assets/home-img-08.webp",
+                  "alt": "葦葦在池邊協助確認狀況"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "courses",
+      "nav": "課程",
+      "title": "課程",
+      "count": "3 個課程分類",
+      "layout": "collapsible",
+      "blocks": [],
+      "children": [
+        {
+          "id": "aida",
+          "title": "AIDA 證照課程",
+          "subtitle": "三個等級，皆需年滿 18 歲。費用包含課程、證照申請、泳池場地、上課裝備與保險。",
+          "layout": "open",
+          "blocks": [
+            {
+              "type": "cards",
+              "cards": [
+                {
+                  "title": "AIDA 1",
+                  "tag": "18+",
+                  "price": "6,000",
+                  "unit": "元",
+                  "days": "1 天",
+                  "where": "初次體驗自由潛水",
+                  "hours": [
+                    {
+                      "value": "2 hr",
+                      "label": "理論課"
+                    },
+                    {
+                      "value": "2 hr",
+                      "label": "泳池課"
+                    },
+                    {
+                      "value": "2 hr",
+                      "label": "海訓課"
+                    }
+                  ],
+                  "detailsLabel": "課程內容",
+                  "details": [
+                    {
+                      "heading": "理論課",
+                      "text": "自潛基本介紹、自潛行為規範、基礎生理學、裝備介紹、耳壓平衡技巧"
+                    },
+                    {
+                      "heading": "泳池課",
+                      "text": "靜態閉氣練習、蛙鞋平潛練習、潛伴制度、自潛救援"
+                    },
+                    {
+                      "heading": "海訓課",
+                      "text": "水面呼氣浮力測試、躬身下潛體驗、深度五米體驗、攀繩下潛體驗、踢蛙鞋下潛體驗"
+                    }
+                  ],
+                  "gift": "課程小禮：課程紀錄片帶回家"
+                },
+                {
+                  "title": "AIDA 2",
+                  "tag": "18+",
+                  "price": "13,000",
+                  "unit": "元",
+                  "days": "3 天",
+                  "where": "A：學科＋泳池 1 日（台南），海訓 2 日（小琉球）\nB：學科＋泳池＋海訓一次 3 日（小琉球）",
+                  "hours": [
+                    {
+                      "value": "3 hr",
+                      "label": "理論課"
+                    },
+                    {
+                      "value": "3 hr",
+                      "label": "泳池課"
+                    },
+                    {
+                      "value": "6 hr",
+                      "label": "海訓課"
+                    }
+                  ],
+                  "detailsLabel": "課程內容",
+                  "details": [
+                    {
+                      "heading": "理論課",
+                      "text": "自潛基本介紹、自潛行為規範、基礎生理學、裝備介紹、耳壓平衡技巧、泳池項目介紹、安全與救援、放鬆與呼吸"
+                    },
+                    {
+                      "heading": "泳池課",
+                      "text": "岸上伸展與暖身、靜態閉氣練習、蛙鞋平潛練習、平靜水域救援技巧、潛伴制度、泳池中性浮力"
+                    },
+                    {
+                      "heading": "海訓課",
+                      "text": "水面呼氣浮力測試、躬身下潛練習、攀繩下潛練習、恆重下潛練習、潛伴與救援技巧練習、浮球使用介紹"
+                    }
+                  ],
+                  "gift": "課程小禮：課程紀錄片帶回家、平壓練習器"
+                },
+                {
+                  "title": "AIDA 3",
+                  "tag": "18+",
+                  "price": "18,000",
+                  "unit": "元",
+                  "days": "4–5 天",
+                  "where": "A：理論＋泳池（台南）2 天，海訓（小琉球）3 天\nB：小琉球一次完成 4 天",
+                  "hours": [
+                    {
+                      "value": "6 hr",
+                      "label": "理論課"
+                    },
+                    {
+                      "value": "6 hr",
+                      "label": "泳池課"
+                    },
+                    {
+                      "value": "8 hr",
+                      "label": "海訓課"
+                    }
+                  ],
+                  "detailsLabel": "課程內容",
+                  "details": [
+                    {
+                      "heading": "理論課",
+                      "text": "進階生理學、平壓優化、氣壓傷預防及處置、中性浮力設置、Freefall、動靜態訓練課表安排、哺乳動物潛水反應、心靈可視化訓練、全呼吸優化及伸展技巧"
+                    },
+                    {
+                      "heading": "泳池課",
+                      "text": "靜態閉氣練習、蛙鞋平潛練習、動態二氧化碳耐受度訓練、泳池中性浮力設置、泳池戒護、無蹼介紹"
+                    },
+                    {
+                      "heading": "海訓課",
+                      "text": "中性浮力設置、攀繩下潛練習、恆重下潛練習、Freefall 技巧掌握、Landyard 快卸、潛點分析、浮球架設"
+                    }
+                  ],
+                  "gift": "課程小禮：課程紀錄片帶回家、船潛一次或安全繩擇一"
+                }
+              ]
+            },
+            {
+              "type": "notes",
+              "items": [
+                "以上為 1:1 開課、不另外招生者，需加價 2,000 元。",
+                "課後每個月可免費跟課 1 次（人數有限），超過以訓練潛計費。",
+                "若有需要船潛，費用另計。",
+                "其他團體報課優惠，請私訊蕉練。"
+              ]
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "training",
+          "title": "訓練課程",
+          "subtitle": "拿到證照後持續進步，或補強還沒通過的項目。每堂 2.5 小時，泳池入場費另計。",
+          "layout": "open",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "項目",
+                "學生",
+                "非學生"
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    "初階泳池訓練",
+                    "500",
+                    "800"
+                  ],
+                  "note": "AIDA 3 以下泳池項目未通過者"
+                },
+                {
+                  "cells": [
+                    "基礎深度訓練",
+                    "1,000",
+                    "1,500"
+                  ],
+                  "note": "20 米內"
+                },
+                {
+                  "cells": [
+                    "進階深度訓練",
+                    "1,500",
+                    "2,500"
+                  ],
+                  "note": "30 米內"
+                }
+              ],
+              "footnote": "價格單位：元／堂"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "special",
+          "title": "專項課程",
+          "subtitle": "針對單一技巧集中練習。報名較高階證照課程的話，部分專項已包含在內。泳池入場費另計。",
+          "layout": "open",
+          "blocks": [
+            {
+              "type": "table",
+              "headers": [
+                "課程",
+                "費用",
+                "已包含於"
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    "初階法蘭佐平壓",
+                    "1,500",
+                    "AIDA 2"
+                  ],
+                  "note": "適合卡平壓、0–20 米平壓"
+                },
+                {
+                  "cells": [
+                    "進階法蘭佐",
+                    "3,000",
+                    "AIDA 3"
+                  ],
+                  "note": "30 米內擠壓傷、平壓不順、0–30 米平壓"
+                },
+                {
+                  "cells": [
+                    "動態平潛（雙蹼）優化",
+                    "1,500",
+                    "AIDA 3"
+                  ],
+                  "note": "0–100 米"
+                },
+                {
+                  "cells": [
+                    "基礎無蹼",
+                    "1,500",
+                    "AIDA 3"
+                  ],
+                  "note": "0–50 米"
+                },
+                {
+                  "cells": [
+                    "閉氣課",
+                    "1,500",
+                    "AIDA 3"
+                  ],
+                  "note": "0–4 分鐘｜全呼吸優化、肺容積偵測、滿肺拉伸"
+                }
+              ],
+              "footnote": "價格單位：元"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "guide",
+      "nav": "小琉球導潛",
+      "title": "小琉球導潛",
+      "count": "導潛方案",
+      "subtitle": "想在小琉球放鬆下水，由教練帶你認識潛點。導潛屬於一般下潛，不含動作指導。",
+      "layout": "collapsible",
+      "blocks": [
+        {
+          "type": "cards",
+          "cards": [
+            {
+              "title": "學生",
+              "price": "800",
+              "unit": "元／潛"
+            },
+            {
+              "title": "非學生",
+              "price": "1,100",
+              "unit": "元／潛"
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "deal",
+      "nav": "折扣產品",
+      "title": "折扣產品",
+      "count": "Pebbling 優惠資訊",
+      "subtitle": "Pebbling 香氛沐浴乳，註冊會員並輸入專屬折扣碼即可享折扣。",
+      "layout": "collapsible",
+      "blocks": [
+        {
+          "type": "product",
+          "images": [
+            {
+              "src": "assets/home-img-09.webp",
+              "alt": "Pebbling 企鵝 500ml 中性香沐浴乳產品圖"
+            },
+            {
+              "src": "assets/home-img-10.webp",
+              "alt": "Pebbling 企鵝洗髮沐浴二合一產品照"
+            },
+            {
+              "src": "assets/home-img-11.webp",
+              "alt": "Pebbling 企鵝洗髮沐浴二合一與人魚公主護髮乳，放在泳池邊"
+            }
+          ],
+          "title": "Pebbling 香氛沐浴乳",
+          "subtitle": "企鵝 500ml｜中性香｜頂級植萃防護",
+          "steps": [
+            "前往 Pebbling 官網，註冊會員。",
+            "輸入專屬折扣碼 banana，即可享折扣。"
+          ],
+          "codeLabel": "專屬折扣碼",
+          "code": "banana",
+          "note": "想要更多優惠？私訊我們加入團購。",
+          "buttons": [
+            {
+              "text": "前往 Pebbling 官網",
+              "url": "https://pebbling.cyberbiz.co",
+              "style": "p"
+            },
+            {
+              "text": "私訊加入團購",
+              "url": "https://www.instagram.com/bananaflow_freediving/",
+              "style": "o"
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "photos",
+      "nav": "相片集",
+      "title": "賽事與潛旅",
+      "subtitle": "教練的比賽與潛水旅行紀錄。點擊分類即可展開內容，點擊照片可放大。",
+      "layout": "open",
+      "exclusive": true,
+      "blocks": [],
+      "children": [
+        {
+          "id": "races",
+          "title": "賽事",
+          "count": "3 項賽事紀錄",
+          "layout": "collapsible",
+          "blocks": [],
+          "children": [
+            {
+              "id": "prc-2026",
+              "title": "2026 環太平洋自由潛水泳池賽（PRC）",
+              "subtitle": "公開團體 B 組銅牌｜隊名：DEEPBLUE 最深的藍",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "initial": 4,
+                  "images": [
+                    {
+                      "src": "assets/prc-01.webp",
+                      "alt": "2026 PRC 比賽中，選手在泳池水下進行動態平潛"
+                    },
+                    {
+                      "src": "assets/prc-02.webp",
+                      "alt": "2026 PRC 比賽中，穿著長蛙鞋的選手在水下前進"
+                    },
+                    {
+                      "src": "assets/prc-03.webp",
+                      "alt": "2026 PRC 泳池賽事，選手與安全員在水下進行比賽"
+                    },
+                    {
+                      "src": "assets/prc-04.webp",
+                      "alt": "2026 PRC 比賽中，選手在泳池水下完成動態平潛"
+                    },
+                    {
+                      "src": "assets/prc-05.webp",
+                      "alt": "2026 PRC 比賽現場，選手在泳道中進行水下競賽"
+                    },
+                    {
+                      "src": "assets/prc-06.webp",
+                      "alt": "2026 PRC 賽事獲得第三名的獎牌"
+                    },
+                    {
+                      "src": "assets/prc-07.webp",
+                      "alt": "2026 PRC 參賽選手與隊伍合照"
+                    },
+                    {
+                      "src": "assets/prc-08.webp",
+                      "alt": "2026 PRC 參賽團隊與選手合影留念"
+                    },
+                    {
+                      "src": "assets/prc-09.webp",
+                      "alt": "2026 PRC 泳池賽事團隊大合照"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "taoyuan-115",
+              "title": "115 年全民運動會（桃園）",
+              "subtitle": "臺南市代表隊｜10 月 17 日｜水中運動男子組 自由潛水動態平潛無蹼｜第 8 名，成績 107.50",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "initial": 4,
+                  "images": [
+                    {
+                      "src": "assets/115-taoyuan-01.webp",
+                      "alt": "115 年全民運動會（桃園），兩位選手在泳池中進行動態平潛"
+                    },
+                    {
+                      "src": "assets/115-taoyuan-02.webp",
+                      "alt": "115 年全民運動會（桃園），自由潛水選手水下平潛畫面"
+                    },
+                    {
+                      "src": "assets/115-taoyuan-03.webp",
+                      "alt": "115 年全民運動會（桃園），選手於泳池邊準備比賽"
+                    },
+                    {
+                      "src": "assets/115-taoyuan-04.webp",
+                      "alt": "115 年全民運動會（桃園），選手完成項目後在池邊舉手示意"
+                    },
+                    {
+                      "src": "assets/home-img-12.webp",
+                      "alt": "教練在比賽池邊閉眼調整呼吸，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-13.webp",
+                      "alt": "教練在比賽池邊準備下水，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-14.webp",
+                      "alt": "臺南市代表隊與各縣市選手大合照，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-15.webp",
+                      "alt": "教練在池邊戴上鼻夾準備，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-16.webp",
+                      "alt": "教練在池邊等待出場，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-17.webp",
+                      "alt": "教練與臺南市體育總會長官合影，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-18.webp",
+                      "alt": "教練與夥伴手持臺南市牌子合影，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "cmas-115",
+              "title": "115 年 CMAS 自由潛水室內錦標賽",
+              "subtitle": "公開男子組 STA、DBF 亞軍",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-19.webp",
+                      "alt": "比賽現場，選手在池邊與安全員確認狀況，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-20.webp",
+                      "alt": "選手完成表現後，在池邊與裁判確認，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-21.webp",
+                      "alt": "選手完成潛水後浮出水面呼吸，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-22.webp",
+                      "alt": "教練在池中比出手勢，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-23.webp",
+                      "alt": "選手在水下平潛，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-24.webp",
+                      "alt": "教練在泳池中，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-25.webp",
+                      "alt": "公開男子組 STA、DBF 亞軍獎牌，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "trips",
+          "title": "潛旅",
+          "count": "5 個潛旅目的地",
+          "layout": "collapsible",
+          "blocks": [],
+          "children": [
+            {
+              "id": "green-island",
+              "title": "綠島潛旅",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-26.webp",
+                      "alt": "綠島潛旅，大家在咖啡廳合影，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-27.webp",
+                      "alt": "綠島潛旅，大家在海邊合影，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-28.webp",
+                      "alt": "教練與學員在綠島水下合照，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-29.webp",
+                      "alt": "綠島的海葵與小丑魚，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-30.webp",
+                      "alt": "潛水者在綠島珊瑚礁上，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-31.webp",
+                      "alt": "綠島的蝙蝠魚群與潛水者，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-32.webp",
+                      "alt": "綠島的海龜，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-33.webp",
+                      "alt": "綠島水下的結構物與潛水者（黑白），點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "lanyu",
+              "title": "蘭嶼潛旅",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-46.webp",
+                      "alt": "蘭嶼水下沉船與潛水者（黑白），點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-47.webp",
+                      "alt": "蘭嶼潛旅，大家在洞口跳躍合影，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-48.webp",
+                      "alt": "蘭嶼潛旅，大家在公路上合影，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-49.webp",
+                      "alt": "潛水者在蘭嶼水下峽谷中上升，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-50.webp",
+                      "alt": "潛水者在水中伸手上升（黑白），點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-51.webp",
+                      "alt": "潛水者沿著潛繩下潛與上升，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "liuqiu",
+              "title": "小琉球潛旅",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-52.webp",
+                      "alt": "小琉球水下沉船與潛水者（黑白），點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-53.webp",
+                      "alt": "小琉球水下沉船與潛水者（黑白），點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-54.webp",
+                      "alt": "潛水者握著水下推進器穿過水下鋼構，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-55.webp",
+                      "alt": "潛水者與水下推進器，背景是水下鋼構，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-56.webp",
+                      "alt": "潛水者操作水下推進器經過沉船，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "maldives",
+              "title": "馬爾地夫潛旅",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-34.webp",
+                      "alt": "馬爾地夫，潛水者與魟魚、魚群，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-35.webp",
+                      "alt": "馬爾地夫的魟魚群，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-36.webp",
+                      "alt": "馬爾地夫的魟魚與魚群，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-37.webp",
+                      "alt": "馬爾地夫，潛水者在水下，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-38.webp",
+                      "alt": "馬爾地夫的魚群與魟魚，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "komodo",
+              "title": "科摩多潛旅",
+              "layout": "open",
+              "blocks": [
+                {
+                  "type": "gallery",
+                  "images": [
+                    {
+                      "src": "assets/home-img-39.webp",
+                      "alt": "科摩多水下的蝠魟，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-40.webp",
+                      "alt": "科摩多的珊瑚礁與水面上的浮潛者，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-41.webp",
+                      "alt": "科摩多水下的魚群，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-42.webp",
+                      "alt": "兩位潛水者與蝠魟同游，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-43.webp",
+                      "alt": "科摩多的科摩多龍，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-44.webp",
+                      "alt": "坐在木帆船船首的旅人，點擊放大"
+                    },
+                    {
+                      "src": "assets/home-img-45.webp",
+                      "alt": "木帆船甲板上擺好的餐桌，點擊放大"
+                    }
+                  ]
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "nav": "報名",
+      "title": "想上課，先聊聊",
+      "subtitle": "告訴教練你的程度與想上的課程，一起安排日期與地點。",
+      "layout": "contact",
+      "blocks": [
+        {
+          "type": "buttons",
+          "center": true,
+          "buttons": [
+            {
+              "text": "私訊官方 IG",
+              "url": "https://www.instagram.com/bananaflow_freediving/",
+              "style": "p"
+            },
+            {
+              "text": "YouTube 頻道",
+              "url": "https://youtube.com/@banana-ariel",
+              "style": "s"
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "官方 IG",
+              "text": "@bananaflow_freediving",
+              "url": "https://www.instagram.com/bananaflow_freediving/"
+            },
+            {
+              "label": "教練個人 IG",
+              "text": "@rs963258741",
+              "url": "https://www.instagram.com/rs963258741/",
+              "note": "（私人帳號，需先送出追蹤申請）"
+            },
+            {
+              "label": "YouTube",
+              "text": "@banana-ariel",
+              "url": "https://youtube.com/@banana-ariel"
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "abroad",
+      "nav": "國外潛旅",
+      "title": "國外潛旅",
+      "layout": "open",
+      "showOnPage": false,
+      "navMenu": true,
+      "blocks": [],
+      "children": [
+        {
+          "id": "miyako",
+          "title": "宮古島",
+          "navNote": "MIYAKO BLUE ↗",
+          "link": "miyako/",
+          "layout": "open",
+          "blocks": [],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "footer": "© 蕉流 Freediving｜教練 Banana"
+}
